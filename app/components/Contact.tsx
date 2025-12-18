@@ -32,18 +32,6 @@ function Contact() {
             Instagram
           </a>
         </div>
-
-        {/* <div className="mt-12 pt-8 border-t border-gray-700">
-          <p className="text-gray-300">
-            <span className="font-semibold">Email:</span>{" "}
-            <a
-              href={`mailto:${contactInfo.email}`}
-              className="text-white hover:underline font-medium"
-            >
-              {contactInfo.email}
-            </a>
-          </p>
-        </div> */}
       </div>
     </section>
   );
