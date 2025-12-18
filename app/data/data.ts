@@ -44,22 +44,9 @@ const experienceData = [
     position: "Back End Developer",
     period: "2023 - Present",
     location: "South Tangerang, Indonesia ",
-    techStack: ["Java", "Spring", "PostgreSQL", "MongoDB"],
+    techStack: ["Java", "Spring", "PostgreSQL", "MongoDB", "Docker"],
     project:
       "Payment Gateway Integration, Accounting System & Railway Gateway API",
-    responsibilities: [
-      "Designed, developed, and maintained backend systems for seamless payment integrations with major banks (BRI, BCA, Permata Bank, BSI).",
-      "Integrated and optimized bank statement APIs to support automated fund transfers and reconciliation processes.",
-      "Implemented Virtual Account APIs to enable automated and scalable payment solutions.",
-      "Handled high-volume financial transactions in production environments with a strong focus on data accuracy, security, and reliability.",
-      "Collaborated closely with banking partners and internal stakeholders to ensure regulatory compliance and smooth system integrations.",
-      "Developed a comprehensive accounting system to generate journals, ledgers, and financial reports while managing millions of transaction records with high data integrity.",
-      "Designed and developed a backend gateway service that integrates with external railway supplier APIs (KAI).",
-      "Consumed and normalized data from supplier APIs to provide standardized responses for internal services.",
-      "Exposed internal APIs consumed by the railway-service for schedule retrieval, availability, booking, and transaction workflows.",
-      "Implemented error handling, data validation, and response mapping to ensure system stability and data consistency.",
-      "Ensured reliable communication between external suppliers and internal microservices architecture.",
-    ],
     achievements: [
       "Successfully processed and maintained millions of financial transactions with high reliability.",
       "Improved transaction automation and reconciliation efficiency through optimized bank API integrations.",
@@ -71,7 +58,7 @@ const experienceData = [
   {
     company: "Calaraya Project (Freelance)",
     position: "Full Stack Developer",
-    period: "2025 - Present",
+    period: "2024 - Present",
     location: "Bogor, Indonesia",
     techStack: [
       "React",
@@ -83,94 +70,61 @@ const experienceData = [
       "PHP",
     ],
     project: "Websites & Digital Invitation",
-    responsibilities: [
-      "Designed and developed custom websites and digital wedding invitations based on client requirements and branding preferences.",
-      "Implemented responsive and mobile-friendly layouts to ensure optimal user experience across devices.",
-      "Integrated multimedia content such as images, videos, background music, and RSVP forms.",
-      "Collaborated directly with clients to gather requirements, provide design suggestions, and deliver revisions efficiently.",
-      "Managed deployment, hosting, and basic SEO optimization for client websites.",
-    ],
     achievements: [
       "Successfully delivered multiple custom web and digital invitation projects with high client satisfaction.",
       "Improved client engagement through visually appealing and interactive invitation designs.",
-      "Built reusable templates to reduce development time while maintaining customization flexibility.",
       "Developed high-performance websites optimized for fast loading, smooth animations, and responsive behavior across modern browsers.",
       "Implemented image and media optimization strategies using Cloudinary to balance visual quality and performance.",
       "Applied modern UI/UX principles to enhance readability, accessibility, and overall user experience.",
-      "Reduced page load time by optimizing assets, layout structure, and component rendering in Next.js.",
-      "Successfully deployed and maintained production websites with stable uptime and consistent performance.",
     ],
   },
-  // {
-  //   company: "Djuanda University",
-  //   position: "System Administrator & Administrative Staff",
-  //   period: "2015 - 2023",
-  //   location: "Bogor, Indonesia",
-  //   techStack: ["Ms Office"],
-  //   project: "Neo Feeder PD-DIKTI Academic System",
-  //   responsibilities: [
-  //     "Managed student academic records, including biodata, educational history, curriculum details, and enrollment data.",
-  //     "Maintained and validated student grades to ensure accuracy and compliance with academic regulations.",
-  //     "Prepared and organized institutional data for higher education accreditation assessments.",
-  //     "Handled and facilitated incoming and outgoing correspondence, including document processing and distribution, to support administrative operations.",
-  //   ],
-  //   achievements: [
-  //     "Ensured accurate and compliant academic data reporting for national higher education systems.",
-  //     "Supported successful accreditation processes through well-prepared and structured academic data.",
-  //     "Maintained efficient administrative workflows for daily university operations.",
-  //   ],
-  // },
 ];
 
 const portfolioProjects = [
   {
-    title: "Rent Clothes Web ",
+    title: "Qatia Rent",
     description:
       "A web application for renting clothes and admin panel to manage the clothes & transactions.",
     imageUrl:
       "https://res.cloudinary.com/dk16ng09n/image/upload/v1765989761/personal/web-porto/qatia_tiulwx.png",
-    techStack: ["Laravel", "React", "MySQL", "Tailwind CSS", "Typescript"],
+    techStack: ["Laravel", "React", "MySQL", "Tailwind CSS"],
     previewUrl: "https://qatiarent.com/",
   },
   {
-    title: "E-Invitation Netflix Theme",
-    description: "A modern e-invitation platform with a Netflix-inspired theme",
+    title: "E-Invitation Netflix",
+    description: "A modern e-invitation with a Netflix-inspired theme",
     imageUrl:
       "https://res.cloudinary.com/dk16ng09n/image/upload/v1765992495/personal/web-porto/netflix_jmoiic.png",
     techStack: ["Next.js", "Typescript", "Supabase", "Tailwind CSS"],
     previewUrl: "https://calaraya.vercel.app/bella-syafik?id=OkfVBm",
   },
   {
-    title: "E-Invitation Floral Theme",
-    description:
-      "A beautiful e-invitation platform with a floral-inspired theme",
+    title: "E-Invitation Floral",
+    description: "A beautiful e-invitation with a floral-inspired theme",
     imageUrl:
       "https://res.cloudinary.com/dk16ng09n/image/upload/v1765992923/personal/web-porto/floral_lund0v.png",
     techStack: ["Next.js", "Typescript", "Supabase", "Tailwind CSS"],
     previewUrl: "https://calaraya.vercel.app/ilham-rosi?id=O9IPp",
   },
   {
-    title: "E-Invitation Magazine Theme",
-    description:
-      "A stylish e-invitation platform with a magazine-inspired theme",
+    title: "E-Invitation Magazine",
+    description: "A stylish e-invitation with a magazine-inspired theme",
     imageUrl:
       "https://res.cloudinary.com/dk16ng09n/image/upload/v1765993975/personal/web-porto/magazine_yt4whr.png",
     techStack: ["Next.js", "Typescript", "Supabase", "Tailwind CSS"],
     previewUrl: "https://calaraya.vercel.app/rahma-jalal?id=Gku6G",
   },
   {
-    title: "E-Invitation Maroon Theme",
-    description:
-      "An Elegant e-invitation platform with a maroon-inspired theme",
+    title: "E-Invitation Maroon",
+    description: "An Elegant e-invitation with a maroon-inspired theme",
     imageUrl:
       "https://res.cloudinary.com/dk16ng09n/image/upload/v1765994308/personal/web-porto/maroon_aohj7a.png",
     techStack: ["Next.js", "Typescript", "Supabase", "Tailwind CSS"],
     previewUrl: "https://calaraya.vercel.app/reigiya-amar?id=1XsqW",
   },
   {
-    title: "E-Invitation Stylish Bold Theme",
-    description:
-      "A modern e-invitation platform with a stylish bold-inspired theme",
+    title: "E-Invitation Stylish Bold",
+    description: "A modern e-invitation with a stylish bold-inspired theme",
     imageUrl:
       "https://res.cloudinary.com/dk16ng09n/image/upload/v1765994579/personal/web-porto/stylishbold_armbt3.png",
     techStack: ["Next.js", "Typescript", "Supabase", "Tailwind CSS"],

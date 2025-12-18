@@ -1,3 +1,4 @@
+import { GraduationCap, MapPin, School } from "lucide-react";
 import { educationData } from "../data/data";
 
 function Education() {
@@ -39,24 +40,34 @@ function Education() {
                   {/* Header */}
                   <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-4 mb-6">
                     <div className="flex-1">
+                      {/* Degree */}
+                      <div className="flex items-start gap-3 mb-3">
+                        <GraduationCap className="w-5 h-5 text-gray-800 mt-0.5 shrink-0" />
+                        <h3 className="text-lg md:text-xl font-semibold text-gray-800 leading-tight">
+                          {edu.degree}
+                        </h3>
+                      </div>
+
+                      {/* Institution */}
                       <div className="flex items-center gap-3 mb-2">
-                        <div className="flex-1">
-                          <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
-                            {edu.degree}
-                          </h3>
-                          <p className="text-md md:text-md text-gray-900 font-semibold flex items-center gap-2 mb-2">
-                            {edu.institution}
-                          </p>
-                          <p className="text-xs md:text-sm text-gray-500 flex items-center">
-                            {edu.location}
-                          </p>
-                        </div>
+                        <School className="w-4.5 h-4.5 mb-0.5 text-gray-600 shrink-0" />
+                        <p className="text-base md:text-lg font-semibold text-gray-800">
+                          {edu.institution}
+                        </p>
+                      </div>
+
+                      {/* Location */}
+                      <div className="flex items-center gap-3">
+                        <MapPin className="w-4 h-4 text-gray-500 shrink-0" />
+                        <p className="text-xs md:text-sm text-gray-500">
+                          {edu.location}
+                        </p>
                       </div>
                     </div>
 
                     <div className="w-fit inline-flex items-center gap-2 px-4 py-2 bg-linear-to-r from-slate-50 to-slate-100 border border-blue-100 rounded-full">
                       <svg
-                        className="w-4 h-4 text-blue-500"
+                        className="w-4 h-4 text-gray-700"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -68,7 +79,7 @@ function Education() {
                           d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                         />
                       </svg>
-                      <span className="text-xs md:text-sm font-semibold text-gray-700">
+                      <span className="text-xs md:text-sm font-medium text-gray-700">
                         {edu.period}
                       </span>
                     </div>
