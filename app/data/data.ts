@@ -43,9 +43,10 @@ const experienceData = [
     company: "PT. Voltras International",
     position: "Back End Developer",
     period: "2023 - Present",
-    location: "Tangerang, Indonesia ",
+    location: "South Tangerang, Indonesia ",
     techStack: ["Java", "Spring", "PostgreSQL", "MongoDB"],
-    project: "Payment Gateway, Accounting System & Railway Gateway ",
+    project:
+      "Payment Gateway Integration, Accounting System & Railway Gateway API",
     responsibilities: [
       "Designed, developed, and maintained backend systems for seamless payment integrations with major banks (BRI, BCA, Permata Bank, BSI).",
       "Integrated and optimized bank statement APIs to support automated fund transfers and reconciliation processes.",
@@ -69,19 +70,19 @@ const experienceData = [
   },
   {
     company: "Calaraya Project (Freelance)",
-    position: "Freelance Web Developer & Digital Invitation",
+    position: "Full Stack Developer",
     period: "2025 - Present",
     location: "Bogor, Indonesia",
     techStack: [
       "React",
+      "TypeScript",
       "Next.js",
       "Tailwind CSS",
-      "Cloudinary",
       "Supabase",
       "Laravel",
       "PHP",
     ],
-    project: "Custom Websites & Digital Wedding Invitation",
+    project: "Websites & Digital Invitation",
     responsibilities: [
       "Designed and developed custom websites and digital wedding invitations based on client requirements and branding preferences.",
       "Implemented responsive and mobile-friendly layouts to ensure optimal user experience across devices.",
@@ -93,27 +94,32 @@ const experienceData = [
       "Successfully delivered multiple custom web and digital invitation projects with high client satisfaction.",
       "Improved client engagement through visually appealing and interactive invitation designs.",
       "Built reusable templates to reduce development time while maintaining customization flexibility.",
+      "Developed high-performance websites optimized for fast loading, smooth animations, and responsive behavior across modern browsers.",
+      "Implemented image and media optimization strategies using Cloudinary to balance visual quality and performance.",
+      "Applied modern UI/UX principles to enhance readability, accessibility, and overall user experience.",
+      "Reduced page load time by optimizing assets, layout structure, and component rendering in Next.js.",
+      "Successfully deployed and maintained production websites with stable uptime and consistent performance.",
     ],
   },
-  {
-    company: "Djuanda University",
-    position: "System Administrator & Administrative Staff",
-    period: "2015 - 2023",
-    location: "Bogor, Indonesia",
-    techStack: ["Ms Office"],
-    project: "Neo Feeder PD-DIKTI Academic System",
-    responsibilities: [
-      "Managed student academic records, including biodata, educational history, curriculum details, and enrollment data.",
-      "Maintained and validated student grades to ensure accuracy and compliance with academic regulations.",
-      "Prepared and organized institutional data for higher education accreditation assessments.",
-      "Handled and facilitated incoming and outgoing correspondence, including document processing and distribution, to support administrative operations.",
-    ],
-    achievements: [
-      "Ensured accurate and compliant academic data reporting for national higher education systems.",
-      "Supported successful accreditation processes through well-prepared and structured academic data.",
-      "Maintained efficient administrative workflows for daily university operations.",
-    ],
-  },
+  // {
+  //   company: "Djuanda University",
+  //   position: "System Administrator & Administrative Staff",
+  //   period: "2015 - 2023",
+  //   location: "Bogor, Indonesia",
+  //   techStack: ["Ms Office"],
+  //   project: "Neo Feeder PD-DIKTI Academic System",
+  //   responsibilities: [
+  //     "Managed student academic records, including biodata, educational history, curriculum details, and enrollment data.",
+  //     "Maintained and validated student grades to ensure accuracy and compliance with academic regulations.",
+  //     "Prepared and organized institutional data for higher education accreditation assessments.",
+  //     "Handled and facilitated incoming and outgoing correspondence, including document processing and distribution, to support administrative operations.",
+  //   ],
+  //   achievements: [
+  //     "Ensured accurate and compliant academic data reporting for national higher education systems.",
+  //     "Supported successful accreditation processes through well-prepared and structured academic data.",
+  //     "Maintained efficient administrative workflows for daily university operations.",
+  //   ],
+  // },
 ];
 
 const portfolioProjects = [
@@ -130,7 +136,7 @@ const portfolioProjects = [
     title: "E-Invitation Netflix Theme",
     description: "A modern e-invitation platform with a Netflix-inspired theme",
     imageUrl:
-      "https://res.cloudinary.com/dk16ng09n/image/upload/v1765991023/personal/web-porto/netflix_zwgxs6.png",
+      "https://res.cloudinary.com/dk16ng09n/image/upload/v1765992495/personal/web-porto/netflix_jmoiic.png",
     techStack: ["Next.js", "Typescript", "Supabase", "Tailwind CSS"],
     previewUrl: "https://calaraya.vercel.app/bella-syafik?id=OkfVBm",
   },

@@ -15,7 +15,7 @@ function Experience() {
           {experienceData.map((exp, index: number) => (
             <div
               key={index}
-              className="bg-linear-to-br from-gray-50 to-gray-100 border-2 border-gray-300 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all"
+              className="bg-linear-to-br from-gray-50 to-gray-100 border border-gray-300 rounded-xl p-5 md:p-8 shadow-xs hover:shadow-xs transition-all"
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                 <div>
@@ -26,9 +26,9 @@ function Experience() {
                     {exp.company}
                   </p>
                 </div>
-                <span className="text-sm font-medium text-gray-700 bg-gray-200 px-4 py-2 rounded-full mt-2 md:mt-0">
+                <p className="w-fit text-sm font-medium text-gray-700 bg-gray-200 px-4 py-2 rounded-full mt-2 md:mt-0">
                   {exp.period}
-                </span>
+                </p>
               </div>
 
               <div className="mb-6">
@@ -70,15 +70,15 @@ function Experience() {
               </div>
 
               <div className="mb-6">
-                <h4 className="text-sm font-semibold text-gray-700 mb-2">
+                <h4 className="text-md font-semibold text-gray-700 mb-2">
                   Project
                 </h4>
-                <p className="text-gray-700 font-medium text-md md:text-lg">
+                <p className="text-gray-700 font-medium text-xs md:text-md">
                   {exp.project}
                 </p>
               </div>
 
-              <div className="mb-6">
+              {/* <div className="mb-6">
                 <h4 className="text-sm font-semibold text-gray-700 mb-3">
                   Responsibilities
                 </h4>
@@ -94,10 +94,10 @@ function Experience() {
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
 
               <div>
-                <h4 className="text-sm font-semibold text-gray-700 mb-3">
+                <h4 className="text-md font-semibold text-gray-700 mb-3">
                   Key Achievements
                 </h4>
                 <ul className="space-y-2">

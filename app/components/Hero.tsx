@@ -31,13 +31,13 @@ function Hero() {
 
           {/* Profile Info */}
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-4xl md:text-5xl font-bold bg-linear-to-r from-gray-900 via-gray-800 to-gray-700 bg-clip-text text-transparent mb-4">
+            <h1 className="text-3xl md:text-4xl font-semibold bg-linear-to-r from-gray-900 via-gray-800 to-gray-700 bg-clip-text text-transparent mb-4">
               {profileData.name}
             </h1>
-            <h2 className="text-2xl md:text-3xl text-gray-800 font-semibold mb-6">
+            <h2 className="text-xl md:text-2xl text-gray-800 font-semibold mb-6">
               {profileData.role}
             </h2>
-            <p className="text-md md:text-lg text-gray-400 mb-8 md:leading-relaxed leading-normal">
+            <p className="text-md md:text-lg text-gray-600 mb-8 md:leading-relaxed leading-normal">
               {profileData.intro}
             </p>
 
