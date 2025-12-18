@@ -6,7 +6,10 @@ import Image from "next/image";
 
 function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-22 bg-linear-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+    <section
+      id="profile"
+      className="min-h-screen flex items-center justify-center px-4 py-22 bg-linear-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden"
+    >
       {/* Background Decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div
@@ -119,38 +122,38 @@ function Hero() {
             <div className="flex justify-center gap-4">
               <a
                 href={profileData.socials.instagram}
-                className="group relative p-4 bg-linear-to-br from-pink-500 to-rose-600 text-white rounded-2xl hover:shadow-xl hover:shadow-pink-500/50 hover:-translate-y-1 transition-all duration-300"
+                className="group relative p-3 md:p-4 bg-linear-to-br from-pink-500 to-rose-600 text-white rounded-full hover:shadow-xl hover:shadow-pink-500/50 hover:-translate-y-1 transition-all duration-300"
                 aria-label="Instagram"
               >
-                <Instagram className="w-6 h-6 relative z-10" />
-                <div className="absolute inset-0 bg-linear-to-br from-pink-400 to-rose-500 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+                <Instagram className="w-5 md:w-6 h-5 md:h-6 relative z-10" />
+                <div className="absolute inset-0 bg-linear-to-br from-pink-400 to-rose-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
               </a>
 
               <a
                 href={profileData.socials.linkedin}
-                className="group relative p-4 bg-linear-to-br from-blue-600 to-blue-700 text-white rounded-2xl hover:shadow-xl hover:shadow-blue-500/50 hover:-translate-y-1 transition-all duration-300"
+                className="group relative p-3 md:p-4 bg-linear-to-br from-blue-600 to-blue-700 text-white rounded-full hover:shadow-xl hover:shadow-blue-500/50 hover:-translate-y-1 transition-all duration-300"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-6 h-6 relative z-10" />
-                <div className="absolute inset-0 bg-linear-to-br from-blue-500 to-blue-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+                <Linkedin className="w-5 md:w-6 h-5 md:h-6 relative z-10" />
+                <div className="absolute inset-0 bg-linear-to-br from-blue-500 to-blue-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
               </a>
 
               <a
                 href={profileData.socials.github}
-                className="group relative p-4 bg-linear-to-br from-gray-800 to-gray-900 text-white rounded-2xl hover:shadow-xl hover:shadow-gray-500/50 hover:-translate-y-1 transition-all duration-300"
+                className="group relative p-3 md:p-4 bg-linear-to-br from-gray-800 to-gray-900 text-white rounded-full hover:shadow-xl hover:shadow-gray-500/50 hover:-translate-y-1 transition-all duration-300"
                 aria-label="GitHub"
               >
-                <Github className="w-6 h-6 relative z-10" />
-                <div className="absolute inset-0 bg-linear-to-br from-gray-700 to-gray-800 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+                <Github className="w-5 md:w-6 h-5 md:h-6 relative z-10" />
+                <div className="absolute inset-0 bg-linear-to-br from-gray-700 to-gray-800 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
               </a>
 
               <a
                 href={`mailto:${profileData.socials.email}`}
-                className="group relative p-4 bg-linear-to-br from-purple-600 to-purple-700 text-white rounded-2xl hover:shadow-xl hover:shadow-purple-500/50 hover:-translate-y-1 transition-all duration-300"
+                className="group relative p-3 md:p-4 bg-linear-to-br from-purple-600 to-purple-700 text-white rounded-full hover:shadow-xl hover:shadow-purple-500/50 hover:-translate-y-1 transition-all duration-300"
                 aria-label="Email"
               >
-                <Mail className="w-6 h-6 relative z-10" />
-                <div className="absolute inset-0 bg-linear-to-br from-purple-500 to-purple-600 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+                <Mail className="w-5 md:w-6 h-5 md:h-6 relative z-10" />
+                <div className="absolute inset-0 bg-linear-to-br from-purple-500 to-purple-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
               </a>
             </div>
           </div>

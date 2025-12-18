@@ -3,10 +3,7 @@ import { contactInfo } from "../data/data";
 
 function Contact() {
   return (
-    <section
-      id="contact"
-      className="py-20 px-4 bg-linear-to-br from-gray-900 via-gray-800 to-gray-900 text-white"
-    >
+    <section id="contact" className="py-20 px-4 bg-gray-900 text-white">
       <div className="max-w-3xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
           Let&apos;s Work Together

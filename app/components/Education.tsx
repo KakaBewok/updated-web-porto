@@ -3,7 +3,7 @@ import { educationData } from "../data/data";
 function Education() {
   return (
     <section
-      id="experience"
+      id="education"
       className="py-20 px-4 bg-linear-to-b from-white to-gray-50 relative overflow-hidden"
     >
       {/* Background decoration */}
@@ -44,10 +44,10 @@ function Education() {
                           <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2">
                             {edu.degree}
                           </h3>
-                          <p className="text-sm md:text-md text-gray-700 font-semibold flex items-center gap-2 mb-2">
+                          <p className="text-md md:text-md text-gray-900 font-semibold flex items-center gap-2 mb-2">
                             {edu.institution}
                           </p>
-                          <p className="text-xs md:text-sm text-gray-400 flex items-center">
+                          <p className="text-xs md:text-sm text-gray-500 flex items-center">
                             {edu.location}
                           </p>
                         </div>
