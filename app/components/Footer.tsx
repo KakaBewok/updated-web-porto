@@ -71,9 +71,6 @@ const Footer = () => {
                   );
                 })}
               </div>
-              <p className="text-gray-400 text-sm">
-                Available for freelance opportunities
-              </p>
             </div>
           </div>
 
