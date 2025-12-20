@@ -62,7 +62,7 @@ function Hero() {
             </div>
 
             {/* Name with linear */}
-            <h1 className="text-4xl md:text-6xl font-bold mb-3 bg-linear-to-r from-gray-900 via-gray-800 to-gray-600 bg-clip-text text-transparent">
+            <h1 className="text-4xl text-gray-700 md:text-6xl font-bold mb-3 bg-linear-to-r from-gray-900 via-gray-800 to-gray-600 bg-clip-text">
               {profileData.name}
             </h1>
 
@@ -76,7 +76,7 @@ function Hero() {
             </div>
 
             {/* Description */}
-            <p className="text-sm md:text-lg text-gray-400 leading-relaxed mb-10 max-w-2xl mx-auto">
+            <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-10 max-w-2xl mx-auto">
               {profileData.intro}
             </p>
 

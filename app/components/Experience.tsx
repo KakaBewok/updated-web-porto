@@ -33,7 +33,7 @@ function Experience() {
             {experienceData.map((exp, index) => (
               <div key={index} className="relative group">
                 {/* Timeline dot */}
-                <div className="hidden md:block absolute left-8.25 top-8 w-5 h-5 bg-linear-to-r from-blue-500 to-purple-500 rounded-full border-4 border-white shadow-lg transform -translate-x-1/2 group-hover:scale-125 transition-transform duration-300 z-10">
+                <div className="hidden md:block absolute left-8.25 top-8 w-5 h-5 bg-linear-to-r from-blue-400 to-purple-400 rounded-full border-4 border-white shadow-lg transform -translate-x-1/2 group-hover:scale-125 transition-transform duration-300 z-10">
                   <span className="absolute inset-0 bg-blue-400 rounded-full animate-ping opacity-75"></span>
                 </div>
 

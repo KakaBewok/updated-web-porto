@@ -1,3 +1,5 @@
+import { Github, Instagram, Linkedin, Mail } from "lucide-react";
+
 const profileData = {
   name: "Noprizal",
   role: "Software Developer",
@@ -27,14 +29,38 @@ const educationData = [
   {
     institution: "Djuanda University",
     degree: "Bachelor of Economics",
+    field: "Islamic Economics",
     period: "2018 - 2022",
     location: "Bogor, Indonesia",
   },
   {
     institution: "Amaliah Vocational High School",
-    degree: "Computer and Network Engineering",
+    degree: "Vocational High School",
+    field: "Computer and Network Engineering",
     period: "2011 - 2014",
     location: "Bogor, Indonesia",
+  },
+];
+
+const socialLinks = [
+  {
+    icon: Instagram,
+    href: "#",
+    label: "Instagram",
+    color: "hover:text-pink-400",
+  },
+  { icon: Github, href: "#", label: "GitHub", color: "hover:text-gray-300" },
+  {
+    icon: Linkedin,
+    href: "#",
+    label: "LinkedIn",
+    color: "hover:text-blue-400",
+  },
+  {
+    icon: Mail,
+    href: "mailto:your@email.com",
+    label: "Email",
+    color: "hover:text-green-400",
   },
 ];
 
@@ -142,4 +168,5 @@ export {
   experienceData,
   portfolioProjects,
   contactInfo,
+  socialLinks,
 };
