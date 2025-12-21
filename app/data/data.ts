@@ -165,7 +165,7 @@ const portfolioProjects = [
     title: "E-Invitation Monochrome",
     description: "A modern e-invitation with a monochrome-inspired theme",
     imageUrl:
-      "https://res.cloudinary.com/dk16ng09n/image/upload/v1766313522/personal/web-porto/nadiah_haris_nir6lm.png",
+      "https://res.cloudinary.com/dk16ng09n/image/upload/v1766313919/personal/web-porto/nadhar_rginzu.png",
     techStack: ["Next.js", "Typescript", "Supabase", "Tailwind CSS"],
     previewUrl: "https://calaraya.vercel.app/nadiah-haris?id=XyUaw",
   },
