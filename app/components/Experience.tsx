@@ -10,8 +10,8 @@ function Experience() {
       className="py-20 px-4 bg-linear-to-b from-white to-gray-50 relative overflow-hidden"
     >
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-50 rounded-full filter blur-3xl opacity-30 -z-0"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-50 rounded-full filter blur-3xl opacity-30 -z-0"></div>
+      <div className="absolute top-0 right-0 w-96 h-96 bg-blue-50 rounded-full filter blur-3xl opacity-30 z-0"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-purple-50 rounded-full filter blur-3xl opacity-30 z-0"></div>
 
       <div className="max-w-5xl mx-auto relative z-10">
         {/* Section Header */}

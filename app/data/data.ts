@@ -45,20 +45,25 @@ const educationData = [
 const socialLinks = [
   {
     icon: Instagram,
-    href: "#",
+    href: "https://instagram.com/noprizal",
     label: "Instagram",
     color: "hover:text-pink-400",
   },
-  { icon: Github, href: "#", label: "GitHub", color: "hover:text-gray-300" },
+  {
+    icon: Github,
+    href: "https://github.com/noprizal",
+    label: "GitHub",
+    color: "hover:text-gray-300",
+  },
   {
     icon: Linkedin,
-    href: "#",
+    href: "https://linkedin.com/in/noprizal",
     label: "LinkedIn",
     color: "hover:text-blue-400",
   },
   {
     icon: Mail,
-    href: "mailto:your@email.com",
+    href: "mailto:rizalnov667@gmail.com",
     label: "Email",
     color: "hover:text-green-400",
   },
