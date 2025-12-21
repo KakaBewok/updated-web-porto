@@ -3,7 +3,10 @@ import { educationData } from "../data/data";
 
 function Education() {
   return (
-    <section className="py-20 px-4 bg-linear-to-b from-white via-gray-50 to-white relative overflow-hidden">
+    <section
+      id="education"
+      className="py-20 px-4 bg-linear-to-b from-white via-gray-50 to-white relative overflow-hidden"
+    >
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-blue-100 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
       <div
