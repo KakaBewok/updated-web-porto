@@ -161,6 +161,14 @@ const portfolioProjects = [
     techStack: ["Next.js", "Typescript", "Supabase", "Tailwind CSS"],
     previewUrl: "https://calaraya.vercel.app/dinna-hudha?id=6yTQy",
   },
+  {
+    title: "E-Invitation Monochrome",
+    description: "A modern e-invitation with a monochrome-inspired theme",
+    imageUrl:
+      "https://res.cloudinary.com/dk16ng09n/image/upload/v1766313522/personal/web-porto/nadiah_haris_nir6lm.png",
+    techStack: ["Next.js", "Typescript", "Supabase", "Tailwind CSS"],
+    previewUrl: "https://calaraya.vercel.app/nadiah-haris?id=XyUaw",
+  },
 ];
 const contactInfo = {
   email: "rizalnov667@gmail.com",
