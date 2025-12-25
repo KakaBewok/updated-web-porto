@@ -113,6 +113,15 @@ const experienceData = [
 
 const portfolioProjects = [
   {
+    title: "Calaraya",
+    description:
+      "A web application that provides website development and digital invitation services.",
+    imageUrl:
+      "https://res.cloudinary.com/dk16ng09n/image/upload/v1766645318/personal/web-porto/calaraya_kubdtf.png",
+    techStack: ["Laravel", "React", "MySQL", "Tailwind CSS"],
+    previewUrl: "https://calaraya.vercel.app/",
+  },
+  {
     title: "Qatia Rent",
     description:
       "A web application for renting clothes and admin panel to manage the clothes & transactions.",
