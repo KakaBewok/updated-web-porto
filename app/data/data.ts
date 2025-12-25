@@ -118,7 +118,7 @@ const portfolioProjects = [
       "A web application that provides website development and digital invitation services.",
     imageUrl:
       "https://res.cloudinary.com/dk16ng09n/image/upload/v1766645318/personal/web-porto/calaraya_kubdtf.png",
-    techStack: ["Laravel", "React", "MySQL", "Tailwind CSS"],
+    techStack: ["Next.js", "Typescript", "Supabase", "Tailwind CSS"],
     previewUrl: "https://calaraya.vercel.app/",
   },
   {
