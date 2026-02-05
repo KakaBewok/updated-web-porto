@@ -25,26 +25,28 @@ function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-lg" : "bg-white/90 backdrop-blur-md"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
+        isScrolled
+          ? "bg-white border-b-8 border-black shadow-[0_8px_0px_0px_rgba(0,0,0,1)]"
+          : "bg-white border-b-4 border-black"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <a
             href="#profile"
-            className="text-xl font-bold bg-linear-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
+            className="text-2xl font-black text-black uppercase tracking-tight hover:text-purple-600 transition-colors"
           >
-            Noprizal
+            Rizal /{'>'}
           </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex space-x-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-gray-700 hover:text-gray-900 transition-colors font-medium"
+                className="px-4 py-2 text-black font-black uppercase text-sm border-4 border-transparent hover:border-black hover:bg-yellow-300 transition-all duration-150"
               >
                 {link.name}
               </a>
@@ -53,16 +55,16 @@ function Navbar() {
 
           {/* Hamburger Button */}
           <button
-            className="relative md:hidden w-10 h-10 flex items-center justify-center"
+            className="relative md:hidden w-12 h-12 flex items-center justify-center border-4 border-black bg-yellow-300 hover:bg-pink-400 transition-colors"
             onClick={() => setIsMobileMenuOpen((prev) => !prev)}
           >
             {/* Menu Icon */}
             <Menu
               className={`
-                absolute w-6 h-6 text-gray-900 transition-all duration-500
+                absolute w-7 h-7 text-black transition-all duration-300
                 ${
                   isMobileMenuOpen
-                    ? "opacity-0 scale-75 rotate-90"
+                    ? "opacity-0 scale-50 rotate-90"
                     : "opacity-100 scale-100 rotate-0"
                 }
               `}
@@ -71,11 +73,11 @@ function Navbar() {
             {/* Close Icon */}
             <X
               className={`
-                absolute w-6 h-6 text-gray-900 transition-all duration-500
+                absolute w-7 h-7 text-black transition-all duration-300
                 ${
                   isMobileMenuOpen
                     ? "opacity-100 scale-100 rotate-0"
-                    : "opacity-0 scale-75 -rotate-90"
+                    : "opacity-0 scale-50 -rotate-90"
                 }
               `}
             />
@@ -83,24 +85,24 @@ function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu (Smooth Animation) */}
+      {/* Mobile Menu */}
       <div
         className={`
-          md:hidden overflow-hidden transition-all duration-500 ease-in-out
+          md:hidden overflow-hidden transition-all duration-300 ease-in-out
           ${
             isMobileMenuOpen
-              ? "max-h-96 opacity-100 translate-y-0"
-              : "max-h-0 opacity-0 -translate-y-2"
+              ? "max-h-96 opacity-100"
+              : "max-h-0 opacity-0"
           }
         `}
       >
-        <div className="bg-white border-t border-gray-200 shadow-lg px-4 py-4 space-y-3">
+        <div className="bg-white border-t-4 border-black px-4 py-4 space-y-2">
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="block text-gray-700 hover:text-gray-900 transition-colors font-medium py-2"
+              className="block text-black font-black uppercase text-sm py-3 px-4 border-4 border-black bg-cyan-300 hover:bg-pink-400 transition-colors"
             >
               {link.name}
             </a>

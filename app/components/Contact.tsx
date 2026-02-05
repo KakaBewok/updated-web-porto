@@ -7,31 +7,31 @@ const Contact = () => {
   };
 
   return (
-    <div className=" bg-gray-50">
+    <div className="bg-white">
       <section
         id="contact"
-        className="relative py-15 px-4 bg-white text-gray-900 overflow-hidden"
+        className="relative py-20 px-4 bg-lime-300 text-black overflow-hidden border-t-8 border-black"
       >
-        {/* Animated Background Elements */}
-        <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-200 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-green-200 rounded-full filter blur-3xl opacity-20 animate-pulse"></div>
+        {/* Bold geometric background shapes */}
+        {/* <div className="absolute top-0 left-1/4 w-96 h-96 bg-pink-400 border-8 border-black rotate-45 opacity-30"></div> */}
+        {/* <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-400 border-8 border-black -rotate-12 opacity-30"></div> */}
 
         <div className="max-w-5xl mx-auto relative z-10">
           {/* Header with Icon */}
           <div className="text-center mb-12">
-            <h2 className="pb-1 text-4xl md:text-5xl font-bold mb-4 bg-linear-to-r from-blue-500 to-green-500 bg-clip-text text-transparent">
+            <h2 className="pb-1 text-5xl md:text-6xl font-black mb-4 text-black uppercase tracking-tight">
               Let&apos;s Work Together
             </h2>
 
-            <p className="text-sm md:text-lg text-gray-600 mb-4 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg text-black mb-4 max-w-2xl mx-auto leading-relaxed font-bold">
               I&apos;m always open to discussing new projects, creative ideas,
               or opportunities to be part of your vision. Feel free to reach
               out!
             </p>
 
-            <div className="flex items-center justify-center gap-2 text-sm text-gray-500">
-              <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-              <span>Available for freelance work</span>
+            <div className="flex items-center justify-center gap-2 text-sm text-black font-black">
+              <div className="w-3 h-3 bg-black"></div>
+              <span className="uppercase">Available for freelance work</span>
             </div>
           </div>
 
@@ -39,19 +39,18 @@ const Contact = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <a
               href={findSocialLink("Email")}
-              className="group relative inline-flex items-center justify-center gap-3 px-6 py-4 bg-gray-900 text-white rounded-xl font-bold text-md overflow-hidden transition-all duration-300 hover:scale-105 shadow-lg"
+              className="group inline-flex items-center justify-center gap-3 px-6 py-4 bg-black text-white border-4 border-black font-black text-base uppercase shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-150"
             >
-              <div className="absolute inset-0 bg-linear-to-r from-pink-500 to-purple-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <Mail className="w-5 h-5 relative z-10" />
-              <span className="relative z-10">Send Email</span>
-              <Send className="w-4 h-4 relative z-10 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all" />
+              <Mail className="w-5 h-5" />
+              <span>Send Email</span>
+              <Send className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
             </a>
 
             <a
               href={findSocialLink("Instagram")}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-3 px-6 py-4 bg-linear-to-r from-pink-500 via-purple-500 to-rose-500 text-white rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+              className="inline-flex items-center justify-center gap-3 px-6 py-4 bg-pink-500 text-white border-4 border-black font-black text-base uppercase shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-150"
             >
               <Instagram className="w-5 h-5" />
               <span>Instagram</span>

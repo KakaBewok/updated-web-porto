@@ -8,75 +8,57 @@ function Hero() {
   return (
     <section
       id="profile"
-      className="min-h-screen flex items-center justify-center px-4 py-22 bg-linear-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center px-4 py-24 bg-yellow-300 relative overflow-hidden"
     >
-      {/* Background Decoration */}
+      {/* Bold geometric background shapes */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div
-          className="absolute top-20 right-10 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"
-          style={{ animation: "blob 7s infinite" }}
-        ></div>
-        <div
-          className="absolute top-40 left-10 w-72 h-72 bg-purple-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"
-          style={{ animation: "blob 7s infinite 2s" }}
-        ></div>
-        <div
-          className="absolute bottom-20 left-1/2 w-72 h-72 bg-pink-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"
-          style={{ animation: "blob 7s infinite 4s" }}
-        ></div>
+        {/* <div className="absolute top-90 right-10 w-72 h-72 bg-cyan-400 border-8 border-black -rotate-12"></div> */}
+        {/* <div className="absolute top-40 left-10 w-64 h-64 bg-pink-400 border-8 border-black rotate-12"></div> */}
+        {/* <div className="absolute bottom-20 left-1/2 w-80 h-80 bg-lime-400 border-8 border-black -rotate-6"></div> */}
       </div>
 
       <div className="max-w-5xl mx-auto relative z-10">
         <div className="flex flex-col items-center gap-8 md:gap-12">
           {/* Profile Photo */}
-          <div className="relative group">
-            {/* Animated ring */}
-            <div className="absolute inset-0 bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-lg opacity-40 group-hover:opacity-60 transition-opacity duration-300 animate-pulse"></div>
-
-            {/* Photo container */}
-            <div className="relative">
-              <div className="w-44 h-44 md:w-64 md:h-64 rounded-full overflow-hidden border-2 border-white shadow-xl group-hover:scale-105 transition-transform duration-300 bg-linear-to-br from-gray-100 to-gray-200">
-                <Image
-                  width={100}
-                  height={100}
-                  unoptimized
-                  src={profileData.photo}
-                  alt={profileData.name}
-                  className="w-full h-full object-cover"
-                />
-              </div>
+          <div className="relative">
+            <div className="rotate-3 w-44 h-44 md:w-64 md:h-64 overflow-hidden border-8 border-black bg-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+              <Image
+                width={256}
+                height={256}
+                unoptimized
+                src={profileData.photo}
+                alt={profileData.name}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
 
           {/* Profile Info */}
           <div className="flex-1 text-center max-w-3xl">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-linear-to-r from-blue-50 to-purple-50 border border-blue-100 rounded-full mb-6">
-              <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
-              </span>
-              <span className="text-sm font-medium text-gray-700">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-lime-300 border-4 border-black mb-6 font-bold">
+              <span className="w-3 h-3 bg-black"></span>
+              <span className="text-sm font-black text-black uppercase tracking-wide">
                 Available for opportunities
               </span>
             </div>
 
-            {/* Name with linear */}
-            <h1 className="text-4xl text-gray-700 md:text-6xl font-bold mb-3 bg-linear-to-r from-gray-900 via-gray-800 to-gray-600 bg-clip-text">
+            {/* Name */}
+            <h1 className="text-5xl md:text-7xl font-black mb-4 text-black uppercase tracking-tight">
               {profileData.name}
             </h1>
 
-            {/* Role with accent */}
-            <div className="flex items-center justify-center gap-3 mb-6">
-              <div className="h-px w-12 bg-linear-to-r from-transparent to-gray-300"></div>
-              <h2 className="text-xl md:text-2xl font-semibold text-gray-700">
+            {/* Role */}
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <div className="h-1 w-12 bg-black"></div>
+              <h2 className="text-2xl md:text-3xl font-black text-black uppercase">
                 {profileData.role}
               </h2>
-              <div className="h-px w-12 bg-linear-to-l from-transparent to-gray-300"></div>
+              <div className="h-1 w-12 bg-black"></div>
             </div>
 
             {/* Description */}
-            <p className="text-sm md:text-lg text-gray-700 leading-relaxed mb-10 max-w-2xl mx-auto">
+            <p className="text-base md:text-xl text-black leading-relaxed mb-10 max-w-2xl mx-auto font-bold">
               {profileData.intro}
             </p>
 
@@ -84,35 +66,35 @@ function Hero() {
             <div className="mb-10">
               <div className="flex flex-wrap justify-center gap-3">
                 {profileData.techStack.map((tech, index) => (
-                  <div key={index} className="group relative">
-                    <div className="absolute inset-0 bg-linear-to-r from-blue-400 to-purple-400 rounded-xl opacity-0 group-hover:opacity-20 blur transition-opacity duration-300"></div>
-                    <div className="relative px-3 md:px-4 py-2 md:py-2.5 bg-white border-2 border-gray-100 hover:border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 flex items-center gap-2 group-hover:-translate-y-1 cursor-pointer">
-                      <Image
-                        src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech
+                  <div
+                    key={index}
+                    className="px-3 md:px-4 py-2 md:py-2.5 bg-white border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-150 flex items-center gap-2 cursor-pointer"
+                  >
+                    <Image
+                      src={`https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech
+                        .toLowerCase()
+                        .replace(".", "")
+                        .replace(" ", "")}//${tech
+                        .toLowerCase()
+                        .replace(".", "")
+                        .replace(" ", "")}-original.svg`}
+                      alt={tech}
+                      width={24}
+                      height={24}
+                      className="w-4 md:w-6 h-4 md:h-6"
+                      onError={(e) => {
+                        e.currentTarget.src = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech
                           .toLowerCase()
-                          .replace(".", "")
+                          .replace(".js", "js")
                           .replace(" ", "")}//${tech
                           .toLowerCase()
-                          .replace(".", "")
-                          .replace(" ", "")}-original.svg`}
-                        alt={tech}
-                        width={24}
-                        height={24}
-                        className="w-4 md:w-6 h-4 md:h-6"
-                        onError={(e) => {
-                          e.currentTarget.src = `https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${tech
-                            .toLowerCase()
-                            .replace(".js", "js")
-                            .replace(" ", "")}//${tech
-                            .toLowerCase()
-                            .replace(".js", "js")
-                            .replace(" ", "")}-plain.svg`;
-                        }}
-                      />
-                      <span className="text-xs md:text-sm font-medium text-gray-700 group-hover:text-gray-900">
-                        {tech}
-                      </span>
-                    </div>
+                          .replace(".js", "js")
+                          .replace(" ", "")}-plain.svg`;
+                      }}
+                    />
+                    <span className="text-xs md:text-sm font-black text-black uppercase">
+                      {tech}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -122,38 +104,34 @@ function Hero() {
             <div className="flex justify-center gap-4">
               <a
                 href={profileData.socials.instagram}
-                className="group relative p-3 md:p-4 bg-linear-to-br from-pink-500 to-rose-600 text-white rounded-full hover:shadow-xl hover:shadow-pink-500/50 hover:-translate-y-1 transition-all duration-300"
+                className="p-3 md:p-4 bg-pink-500 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-150"
                 aria-label="Instagram"
               >
-                <Instagram className="w-5 md:w-6 h-5 md:h-6 relative z-10" />
-                <div className="absolute inset-0 bg-linear-to-br from-pink-400 to-rose-500 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+                <Instagram className="w-6 md:w-7 h-6 md:h-7 text-white" />
               </a>
 
               <a
                 href={profileData.socials.linkedin}
-                className="group relative p-3 md:p-4 bg-linear-to-br from-blue-600 to-blue-700 text-white rounded-full hover:shadow-xl hover:shadow-blue-500/50 hover:-translate-y-1 transition-all duration-300"
+                className="p-3 md:p-4 bg-blue-600 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-150"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="w-5 md:w-6 h-5 md:h-6 relative z-10" />
-                <div className="absolute inset-0 bg-linear-to-br from-blue-500 to-blue-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+                <Linkedin className="w-6 md:w-7 h-6 md:h-7 text-white" />
               </a>
 
               <a
                 href={profileData.socials.github}
-                className="group relative p-3 md:p-4 bg-linear-to-br from-gray-800 to-gray-900 text-white rounded-full hover:shadow-xl hover:shadow-gray-500/50 hover:-translate-y-1 transition-all duration-300"
+                className="p-3 md:p-4 bg-black border-4 border-black shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-150"
                 aria-label="GitHub"
               >
-                <Github className="w-5 md:w-6 h-5 md:h-6 relative z-10" />
-                <div className="absolute inset-0 bg-linear-to-br from-gray-700 to-gray-800 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+                <Github className="w-6 md:w-7 h-6 md:h-7 text-white" />
               </a>
 
               <a
                 href={`mailto:${profileData.socials.email}`}
-                className="group relative p-3 md:p-4 bg-linear-to-br from-purple-600 to-purple-700 text-white rounded-full hover:shadow-xl hover:shadow-purple-500/50 hover:-translate-y-1 transition-all duration-300"
+                className="p-3 md:p-4 bg-purple-600 border-4 border-black shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-2px] hover:translate-y-[-2px] transition-all duration-150"
                 aria-label="Email"
               >
-                <Mail className="w-5 md:w-6 h-5 md:h-6 relative z-10" />
-                <div className="absolute inset-0 bg-linear-to-br from-purple-500 to-purple-600 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm"></div>
+                <Mail className="w-6 md:w-7 h-6 md:h-7 text-white" />
               </a>
             </div>
           </div>

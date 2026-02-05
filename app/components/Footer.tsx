@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 py-5 text-center">
-      <p className="text-gray-600 text-xs md:text-sm">
+    <footer className="bg-black py-6 text-center border-t-8 border-black">
+      <p className="text-white text-xs md:text-sm font-black uppercase tracking-wide">
         © 2024 Noprizal. All rights reserved.
       </p>
     </footer>
