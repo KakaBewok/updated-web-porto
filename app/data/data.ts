@@ -193,6 +193,7 @@ const certificatesData = [
     expiration_date: null,
     image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1766645318/personal/web-porto/calaraya_kubdtf.png",
     desc: "Master Next.js 14/15, the most popular React framework for building full-stack applications.",
+    preview_url: "https://codewithmosh.com/",
   },
   {
     id: 2,
@@ -202,6 +203,7 @@ const certificatesData = [
     expiration_date: "2026-03-10",
     image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765989761/personal/web-porto/qatia_tiulwx.png",
     desc: "Comprehensive course covering advanced TypeScript features, patterns, and best practices.",
+    preview_url: "https://www.udemy.com/",
   },
   {
     id: 3,
@@ -211,6 +213,7 @@ const certificatesData = [
     expiration_date: null,
     image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765992495/personal/web-porto/netflix_jmoiic.png",
     desc: "Intensive bootcamp covering Java, Spring Boot, and modern frontend technologies.",
+    preview_url: "https://www.binaracademy.com/",
   },
   {
     id: 4,
@@ -220,6 +223,7 @@ const certificatesData = [
     expiration_date: null,
     image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765992923/personal/web-porto/floral_lund0v.png",
     desc: "Deep dive into React design patterns, performance optimization, and custom hooks.",
+    preview_url: "https://frontendmasters.com/",
   },
   {
     id: 5,
@@ -229,6 +233,7 @@ const certificatesData = [
     expiration_date: "2026-08-12",
     image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765993975/personal/web-porto/magazine_yt4whr.png",
     desc: "Foundational knowledge of AWS Cloud platform, services, and security.",
+    preview_url: "https://aws.amazon.com/certification/certified-cloud-practitioner/",
   },
   {
     id: 6,
@@ -238,6 +243,7 @@ const certificatesData = [
     expiration_date: null,
     image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765994308/personal/web-porto/maroon_aohj7a.png",
     desc: "Mastering HTML5, CSS3, and responsive design principles for modern web.",
+    preview_url: "https://www.freecodecamp.org/certification/fcc12345678/responsive-web-design",
   },
   {
     id: 7,
@@ -247,6 +253,7 @@ const certificatesData = [
     expiration_date: null,
     image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765994579/personal/web-porto/stylishbold_armbt3.png",
     desc: "Learning Kotlin language and Android development basics with Jetpack Compose.",
+    preview_url: "https://developers.google.com/certification/associate-android-developer",
   },
 ];
 
