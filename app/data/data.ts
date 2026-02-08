@@ -184,11 +184,78 @@ const contactInfo = {
   instagram: "https://www.instagram.com/_kkbwk/",
 };
 
+const certificatesData = [
+  {
+    id: 1,
+    title: "The Ultimate Next.js Series",
+    issuing_organization: "Code with Mosh",
+    issue_date: "2024-05-15",
+    expiration_date: null,
+    image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1766645318/personal/web-porto/calaraya_kubdtf.png",
+    desc: "Master Next.js 14/15, the most popular React framework for building full-stack applications.",
+  },
+  {
+    id: 2,
+    title: "Mastering TypeScript",
+    issuing_organization: "Udemy",
+    issue_date: "2024-03-10",
+    expiration_date: "2026-03-10",
+    image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765989761/personal/web-porto/qatia_tiulwx.png",
+    desc: "Comprehensive course covering advanced TypeScript features, patterns, and best practices.",
+  },
+  {
+    id: 3,
+    title: "Full Stack Java Developer",
+    issuing_organization: "Binar Academy",
+    issue_date: "2023-11-20",
+    expiration_date: null,
+    image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765992495/personal/web-porto/netflix_jmoiic.png",
+    desc: "Intensive bootcamp covering Java, Spring Boot, and modern frontend technologies.",
+  },
+  {
+    id: 4,
+    title: "Advanced React Patterns",
+    issuing_organization: "Frontend Masters",
+    issue_date: "2024-01-05",
+    expiration_date: null,
+    image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765992923/personal/web-porto/floral_lund0v.png",
+    desc: "Deep dive into React design patterns, performance optimization, and custom hooks.",
+  },
+  {
+    id: 5,
+    title: "Cloud Practitioner",
+    issuing_organization: "AWS",
+    issue_date: "2023-08-12",
+    expiration_date: "2026-08-12",
+    image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765993975/personal/web-porto/magazine_yt4whr.png",
+    desc: "Foundational knowledge of AWS Cloud platform, services, and security.",
+  },
+  {
+    id: 6,
+    title: "Responsive Web Design",
+    issuing_organization: "freeCodeCamp",
+    issue_date: "2022-12-30",
+    expiration_date: null,
+    image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765994308/personal/web-porto/maroon_aohj7a.png",
+    desc: "Mastering HTML5, CSS3, and responsive design principles for modern web.",
+  },
+  {
+    id: 7,
+    title: "Kotlin for Android Development",
+    issuing_organization: "Google",
+    issue_date: "2023-05-15",
+    expiration_date: null,
+    image_path: "https://res.cloudinary.com/dk16ng09n/image/upload/v1765994579/personal/web-porto/stylishbold_armbt3.png",
+    desc: "Learning Kotlin language and Android development basics with Jetpack Compose.",
+  },
+];
+
 export {
   profileData,
   educationData,
   experienceData,
   portfolioProjects,
+  certificatesData,
   contactInfo,
   socialLinks,
 };

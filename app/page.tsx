@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Education from "./components/Education";
+import Certificates from "./components/Certificates";
 import Experience from "./components/Experience";
 import Portfolio from "./components/Portofolio";
 import Contact from "./components/Contact";
@@ -14,6 +15,7 @@ export default function App() {
       <Portfolio />
       <Experience />
       <Education />
+      <Certificates />
       <Contact />
       <Footer />
     </div>
