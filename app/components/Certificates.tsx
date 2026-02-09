@@ -56,7 +56,7 @@ function Certificates() {
               className="bg-white border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] md:hover:translate-x-[-2px] md:hover:translate-y-[-2px] transition-all duration-200 flex flex-col"
             >
               {/* Image Container - Reduced Height */}
-              <div className="relative h-44 md:h-48 w-full overflow-hidden bg-gray-200 border-b-4 border-black">
+              <div className="relative h-68 md:h-71 w-full overflow-hidden bg-gray-200 border-b-4 border-black">
                 <Image
                   src={cert.image_path}
                   alt={cert.title}
@@ -66,7 +66,7 @@ function Certificates() {
               </div>
 
               {/* Content - Reduced Padding */}
-              <div className="p-5 flex-1 flex flex-col">
+              <div className="p-3 flex-1 flex flex-col">
                 <div className="flex items-start gap-3 mb-3">
                   <Award className="w-5 h-5 text-black shrink-0 mt-1" />
                   <h3 className="text-lg md:text-xl font-black text-black uppercase line-clamp-2 leading-tight">
@@ -78,7 +78,7 @@ function Certificates() {
                   {cert.issuing_organization}
                 </p>
 
-                <div className="space-y-1.5 mb-5 text-[12px] md:text-xs">
+                {/* <div className="space-y-1.5 mb-5 text-[12px] md:text-xs">
                   <div className="flex items-center gap-2 font-bold text-black uppercase">
                     <Calendar className="w-3.5 h-3.5" />
                     <span>Issued: {formatDate(cert.issue_date)}</span>
@@ -87,13 +87,13 @@ function Certificates() {
                     <Calendar className="w-3.5 h-3.5" />
                     <span>Expires: {formatDate(cert.expiration_date)}</span>
                   </div>
-                </div>
+                </div> */}
 
-                <div className="p-3 bg-cyan-100 border-2 border-black mb-5">
+                {/* <div className="p-3 bg-cyan-100 border-2 border-black mb-5">
                   <p className="text-xs md:text-sm text-black font-bold leading-relaxed line-clamp-3">
                     {cert.desc}
                   </p>
-                </div>
+                </div> */}
 
                 <a
                   href={cert.preview_url}
