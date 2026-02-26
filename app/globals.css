@@ -1,25 +1,129 @@
 @import "tailwindcss";
 
-html {
-  scroll-behavior: smooth;
-  overflow-anchor: none;
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #000000;
-}
+/* ============================================
+   DESIGN SYSTEM – Editorial Minimal Portfolio
+   ============================================ */
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* --- Neutral Palette --- */
+  --color-bg-primary: #FAFAF9;
+  --color-bg-secondary: #F5F5F4;
+  --color-bg-tertiary: #EDEDED;
+  --color-bg-card: #FFFFFF;
+  --color-bg-dark: #1A1A1A;
+  --color-bg-dark-secondary: #222222;
+
+  /* --- Text Colors --- */
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #4A4A4A;
+  --color-text-tertiary: #787878;
+  --color-text-muted: #9E9E9E;
+  --color-text-inverse: #FAFAF9;
+
+  /* --- Accent (Deep Navy) --- */
+  --color-accent: #1E3A5F;
+  --color-accent-light: #2A4F7A;
+  --color-accent-subtle: #E8EDF3;
+
+  /* --- Border & Divider --- */
+  --color-border: #E5E5E5;
+  --color-border-strong: #D4D4D4;
+  --color-border-subtle: #F0F0F0;
+
+  /* --- Font Families --- */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+/* ============================================
+   BASE STYLES
+   ============================================ */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 600;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+}
+
+/* ============================================
+   SELECTION
+   ============================================ */
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-text-inverse);
+}
+
+/* ============================================
+   SCROLLBAR (subtle)
+   ============================================ */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-tertiary);
+}
+
+/* ============================================
+   TRANSITIONS DEFAULTS
+   ============================================ */
+
+a,
+button {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* ============================================
+   FADE-IN ANIMATION (very subtle)
+   ============================================ */
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out both;
+}
+
+.animation-delay-100 {
+  animation-delay: 0.1s;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+}
+
+.animation-delay-300 {
+  animation-delay: 0.3s;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
 }

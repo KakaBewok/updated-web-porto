@@ -1,20 +1,22 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import Education from "./components/Education";
-import Certificates from "./components/Certificates";
+import About from "./components/About";
+import Projects from "./components/Projects";
 import Experience from "./components/Experience";
-import Portfolio from "./components/Portofolio";
+import Skills from "./components/Skills";
+import Certificates from "./components/Certificates";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-bg-primary">
       <Navbar />
       <Hero />
-      <Portfolio />
+      <About />
+      <Projects />
       <Experience />
-      <Education />
+      <Skills />
       <Certificates />
       <Contact />
       <Footer />

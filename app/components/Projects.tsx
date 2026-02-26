@@ -2,66 +2,58 @@
 
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
-import { certificatesData } from "../data/data";
+import { portfolioProjects } from "../data/data";
 import Image from "next/image";
 import Pagination from "./Pagination";
 
 const ITEMS_PER_PAGE = 6;
 
-function Certificates() {
+function Projects() {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const totalPages = Math.ceil(certificatesData.length / ITEMS_PER_PAGE);
+  const totalPages = Math.ceil(portfolioProjects.length / ITEMS_PER_PAGE);
   const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const currentCerts = certificatesData.slice(
+  const currentProjects = portfolioProjects.slice(
     startIndex,
     startIndex + ITEMS_PER_PAGE
   );
 
-  const formatDate = (dateString: string | null) => {
-    if (!dateString) return null;
-    const date = new Date(dateString);
-    return new Intl.DateTimeFormat("en-US", {
-      month: "short",
-      year: "numeric",
-    }).format(date);
-  };
-
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
-    const el = document.getElementById("certificates");
+    const el = document.getElementById("projects");
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <section id="certificates" className="py-24 md:py-32 bg-bg-secondary">
+    <section id="projects" className="py-24 md:py-32 bg-bg-secondary">
       <div className="max-w-6xl mx-auto px-6 lg:px-8">
         {/* Section Label */}
         <p className="text-sm tracking-widest text-text-tertiary uppercase mb-4">
-          Credentials
+          Selected Work
         </p>
         <div className="w-12 h-px bg-border-strong mb-6" />
         <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14">
           <h2 className="text-3xl md:text-4xl font-semibold text-text-primary tracking-tight mb-4 md:mb-0">
-            Certificates
+            Projects
           </h2>
           <p className="text-text-secondary text-sm max-w-md">
-            Professional certifications and completed courses.
+            A collection of web applications and systems built with modern
+            technologies.
           </p>
         </div>
 
-        {/* Certificate Grid */}
+        {/* Project Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {currentCerts.map((cert) => (
+          {currentProjects.map((project, index) => (
             <article
-              key={cert.id}
+              key={startIndex + index}
               className="group bg-bg-card border border-border hover:border-border-strong transition-colors flex flex-col"
             >
               {/* Image */}
               <div className="relative aspect-[16/10] overflow-hidden bg-bg-secondary">
                 <Image
-                  src={cert.image_path}
-                  alt={cert.title}
+                  src={project.imageUrl}
+                  alt={project.title}
                   fill
                   className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -70,37 +62,34 @@ function Certificates() {
 
               {/* Content */}
               <div className="p-6 flex-1 flex flex-col">
-                <h3 className="text-lg font-semibold text-text-primary tracking-tight mb-1.5 line-clamp-2 leading-snug">
-                  {cert.title}
+                <h3 className="text-lg font-semibold text-text-primary tracking-tight mb-2">
+                  {project.title}
                 </h3>
 
-                <p className="text-sm text-text-secondary mb-1">
-                  {cert.issuing_organization}
-                </p>
-
-                {/* Date */}
-                {cert.issue_date && (
-                  <p className="text-xs text-text-muted mb-4">
-                    Issued {formatDate(cert.issue_date)}
-                    {cert.expiration_date && (
-                      <span> · Expires {formatDate(cert.expiration_date)}</span>
-                    )}
-                  </p>
-                )}
-
-                {/* Description */}
                 <p className="text-sm text-text-secondary leading-relaxed mb-5 line-clamp-2 flex-1">
-                  {cert.desc}
+                  {project.description}
                 </p>
+
+                {/* Tech Stack */}
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {project.techStack.map((tech, idx) => (
+                    <span
+                      key={idx}
+                      className="px-2.5 py-1 bg-bg-secondary text-text-tertiary text-xs font-medium tracking-wide"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
 
                 {/* Link */}
                 <a
-                  href={cert.preview_url}
+                  href={project.previewUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-text-primary hover:text-accent transition-colors group/link"
                 >
-                  <span>View Credential</span>
+                  <span>View Project</span>
                   <ArrowUpRight className="w-4 h-4 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
                 </a>
               </div>
@@ -119,4 +108,4 @@ function Certificates() {
   );
 }
 
-export default Certificates;
+export default Projects;
